@@ -677,7 +677,65 @@ impl DeviceManager {
                                     e
                                 );
                             }
+                        }
+                    }
+                }
+
+                // Fallback #1: direct /dev/hidrawX probing based on /sys VID/PID.
+                if let Ok(entries) = fs::read_dir("/dev") {
+                    for entry in entries.flatten() {
+                        let name = match entry.file_name().into_string() {
+                            Ok(n) => n,
+                            Err(_) => continue,
                         };
+                        if !name.starts_with("hidraw") {
+                            continue;
+                        }
+
+                        let Some((vid, pid)) = Self::hidraw_vid_pid(&name) else {
+                            continue;
+                        };
+
+                        eprintln!("hidraw fallback candidate: /dev/{} vid={:04x} pid={:04x}", name, vid, pid);
+                        if vid != RAZER_VENDOR_ID {
+                            continue;
+                        }
+
+                        if let Some(supported_device) = self.find_supported_device(vid, pid) {
+                            let path = format!("/dev/{}", name);
+                            let c_path = match CString::new(path.clone()) {
+                                Ok(p) => p,
+                                Err(_) => continue,
+                            };
+                            eprintln!(
+                                "Trying hidraw fallback open for {} ({:04x}:{:04x}) on {}",
+                                supported_device.name,
+                                vid,
+                                pid,
+                                path,
+                            );
+                            match api.open_path(c_path.as_c_str()) {
+                                Ok(dev) => {
+                                    self.device = Some(RazerLaptop::new(
+                                        supported_device.name.clone(),
+                                        supported_device.features.clone(),
+                                        supported_device.fan.clone(),
+                                        dev,
+                                    ));
+                                    return;
+                                }
+                                Err(e) => {
+                                    eprintln!(
+                                        "hidraw fallback open failed for {} ({:04x}:{:04x}) on {}: {}",
+                                        supported_device.name,
+                                        vid,
+                                        pid,
+                                        path,
+                                        e
+                                    );
+                                }
+                            }
+                        }
                     }
                 }
 
