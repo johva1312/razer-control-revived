@@ -1,55 +1,103 @@
-# Razer Laptop Control - Revived
+<div align="center">
 
-<img width="525" height="439" alt="image" src="https://github.com/user-attachments/assets/84b4fba5-6b77-4e13-aee5-5ac5f0b2b631" />
+# 🐍 Razer Laptop Control — Revived
 
+### Take full control of your Razer Blade on Linux. No kernel modules. No DKMS. Just works.
 
-<img width="1059" height="870" alt="image" src="https://github.com/user-attachments/assets/48b10737-76ed-45a0-886b-df5ba6bea30d" />
+[![License: GPL-2.0](https://img.shields.io/badge/License-GPL%202.0-blue.svg?style=flat-square)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/encomjp/razer-control-revived?style=flat-square&color=brightgreen)](https://github.com/encomjp/razer-control-revived/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/encomjp/razer-control-revived/total?style=flat-square&color=orange)](https://github.com/encomjp/razer-control-revived/releases)
+[![Stars](https://img.shields.io/github/stars/encomjp/razer-control-revived?style=flat-square&color=yellow)](https://github.com/encomjp/razer-control-revived/stargazers)
 
-<img width="1069" height="871" alt="image" src="https://github.com/user-attachments/assets/7de72d59-7323-4933-a742-23c1100d63dd" />
+Fan curves · Power profiles · CPU/GPU boost · Battery health · RGB effects · System tray — all in one place.
 
-<img width="1068" height="877" alt="image" src="https://github.com/user-attachments/assets/cd1c5f19-02f7-4d1f-a570-4b90771ae6d7" />
+---
 
+<a href="https://www.paypal.com/donate/?hosted_button_id=H4SCC24R8KS4A"><img src="https://img.shields.io/badge/%E2%98%95_Buy_Me_a_Coffee-PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" alt="Donate" height="36" /></a>
 
-[![License: GPL-2.0](https://img.shields.io/badge/License-GPL%202.0-blue.svg)](LICENSE)
-[![Release](https://img.shields.io/github/v/release/encomjp/razer-control-revived)](https://github.com/encomjp/razer-control-revived/releases/latest)
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/donate/?hosted_button_id=H4SCC24R8KS4A)
+---
 
-A Linux userspace application to control Razer Blade laptops. **No kernel modules (DKMS) required!**
+</div>
 
-This tool provides more control over your Razer laptop than Synapse does - fan curves, power profiles, CPU/GPU boost, battery health optimization, and RGB effects all in one place.
+## 🖼️ Screenshots
+
+<div align="center">
+
+<img alt="Main Window - Overview" src="https://github.com/user-attachments/assets/48b10737-76ed-45a0-886b-df5ba6bea30d" width="80%" />
+
+*GTK4 / libadwaita GUI — AC & Battery profiles with live system stats*
+
+</div>
+
+<table>
+<tr>
+<td width="50%" align="center">
+<img alt="Power Profile Tab" src="https://github.com/user-attachments/assets/7de72d59-7323-4933-a742-23c1100d63dd" />
+<br><sub><b>⚡ Power Profiles & Fan Control</b></sub>
+</td>
+<td width="50%" align="center">
+<img alt="RGB & Keyboard Tab" src="https://github.com/user-attachments/assets/cd1c5f19-02f7-4d1f-a570-4b90771ae6d7" />
+<br><sub><b>🌈 Keyboard RGB & Effects</b></sub>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<img alt="System Tray" src="https://github.com/user-attachments/assets/84b4fba5-6b77-4e13-aee5-5ac5f0b2b631" width="40%" />
+<br><sub><b>🔔 System Tray with Sensor Tooltip</b></sub>
+</td>
+</tr>
+</table>
+
+---
 
 > **⚠️ DISCLAIMER:** This is experimental community software. Use at your own risk. No warranty is provided.
 
-## ☕ Support This Project
+---
 
-If you find this project useful, please consider supporting its development:
+## 📥 Download & Install
 
-[![Donate with PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg?style=for-the-badge&logo=paypal)](https://www.paypal.com/donate/?hosted_button_id=H4SCC24R8KS4A)
+<div align="center">
 
-## 📥 Downloads
+### Pick your distro and get started in seconds
 
-**[⬇️ Download Latest Release (v0.2.8)](https://github.com/encomjp/razer-control-revived/releases/tag/v0.2.8)**
+<br>
 
-| Package | Best For | Description |
-|---------|----------|-------------|
-| `razercontrol-revived_*.deb` | **Ubuntu / Debian** | Complete .deb package - installs everything |
-| `razercontrol-*.rpm` | **Fedora / RHEL** | Complete RPM package - installs everything |
-| `RazerControl-*.AppImage` | **All distros** | Universal portable GUI (needs daemon) |
-| `razer-control-*.tar.gz` | **Manual install** | Tarball with install script |
+<a href="https://github.com/encomjp/razer-control-revived/releases/latest"><img src="https://img.shields.io/badge/🟠_Ubuntu_/_Debian-.deb_Package-E95420?style=for-the-badge&logoColor=white" alt="Download .deb" height="48" /></a>
+&nbsp;&nbsp;
+<a href="https://github.com/encomjp/razer-control-revived/releases/latest"><img src="https://img.shields.io/badge/🔵_Fedora_/_RHEL-.rpm_Package-51A2DA?style=for-the-badge&logoColor=white" alt="Download .rpm" height="48" /></a>
+&nbsp;&nbsp;
+<a href="https://github.com/encomjp/razer-control-revived/releases/latest"><img src="https://img.shields.io/badge/🟢_Any_Distro-.AppImage-4CAF50?style=for-the-badge&logoColor=white" alt="Download AppImage" height="48" /></a>
+&nbsp;&nbsp;
+<a href="https://github.com/encomjp/razer-control-revived/releases/latest"><img src="https://img.shields.io/badge/📦_Manual-Tarball-888888?style=for-the-badge&logoColor=white" alt="Download Tarball" height="48" /></a>
 
-### Ubuntu / Debian
+<br><br>
+
+</div>
+
+<details open>
+<summary><h3>🟠 Ubuntu / Debian</h3></summary>
+
 ```bash
+# Download the .deb from the releases page, then:
 sudo apt install ./razercontrol-revived_0.2.8_amd64.deb
 ```
+Installs everything: daemon, CLI, GUI, systemd service, udev rules, and desktop entry.
+</details>
 
-### Fedora / RHEL
+<details>
+<summary><h3>🔵 Fedora / RHEL</h3></summary>
+
 ```bash
+# Download the .rpm from the releases page, then:
 sudo dnf install ./razercontrol-0.2.8-1.fc41.x86_64.rpm
 ```
+Installs everything: daemon, CLI, GUI, systemd service, udev rules, and desktop entry.
+</details>
 
-### All Other Distributions (AppImage)
+<details>
+<summary><h3>🟢 AppImage (Any Distribution)</h3></summary>
 
-Install the daemon first, then use the portable AppImage for the GUI:
+The AppImage is a portable GUI. You still need the daemon installed:
 
 ```bash
 # 1. Install daemon from tarball
@@ -61,36 +109,81 @@ sudo ./install.sh
 chmod +x RazerControl-0.2.8-x86_64.AppImage
 ./RazerControl-0.2.8-x86_64.AppImage
 ```
+</details>
 
-> **Note:** Log out and back in (or reboot) after installation for udev rules to take effect.
+<details>
+<summary><h3>❄️ NixOS</h3></summary>
+
+Add to your flake inputs:
+```nix
+inputs.razerdaemon = {
+  url = "github:encomjp/razer-control-revived";
+  inputs.nixpkgs.follows = "nixpkgs";
+};
+```
+Import and enable:
+```nix
+imports = [ inputs.razerdaemon.nixosModules.default ];
+services.razer-laptop-control.enable = true;
+```
+</details>
+
+<details>
+<summary><h3>🔨 Arch Linux / Build from Source</h3></summary>
+
+```bash
+# Install dependencies (Arch example)
+sudo pacman -S rust cargo dbus libusb hidapi pkgconf systemd gtk4 libadwaita git
+
+# Clone and install
+git clone https://github.com/encomjp/razercontrol-revived.git
+cd razercontrol-revived/razer_control_gui
+./install.sh install
+```
+</details>
+
+> **📝 Note:** Log out and back in (or reboot) after installation for udev rules to take effect.
+
+---
 
 ## ✨ Features
 
-- 🌀 **Fan Control** - Auto mode or manual RPM (2200-5000+ depending on model)
-- ⚡ **Power Profiles** - Balanced, Gaming, Creator, Silent, or Custom
-- 🚀 **CPU/GPU Boost** - Fine-tune performance (Low/Normal/High/Boost)
-- 💡 **Logo LED** - Off, On, or Breathing
-- 🌈 **Keyboard RGB** - Brightness control and effects (Static, Wave, Breathing, Spectrum, etc.)
-- 🔋 **Battery Health Optimizer (BHO)** - Limit charge to 50-80% to extend battery lifespan
-- 📊 **System Monitor** - Live CPU/iGPU/dGPU temps, power draw, utilization, battery status
-- 🔔 **System Tray** - KDE system tray icon with sensor tooltip, close-to-tray
-- 🖥️ **GTK4 GUI** - Modern libadwaita interface with separate AC/Battery profiles
-- ⌨️ **CLI** - Full command-line control for scripting
-- 🔄 **Daemon** - Auto-loads your settings on startup
+| | Feature | Description |
+|---|---|---|
+| 🌀 | **Fan Control** | Auto mode or manual RPM (2200–5000+ depending on model) |
+| ⚡ | **Power Profiles** | Balanced, Gaming, Creator, Silent, or Custom |
+| 🚀 | **CPU/GPU Boost** | Fine-tune performance — Low / Normal / High / Boost |
+| 💡 | **Logo LED** | Off, On, or Breathing modes |
+| 🌈 | **Keyboard RGB** | Brightness + effects: Static, Wave, Breathing, Spectrum, Reactive |
+| 🔋 | **Battery Health (BHO)** | Limit charge to 50–80% to extend battery lifespan |
+| 📊 | **System Monitor** | Live CPU/iGPU/dGPU temps, power draw, utilization, battery |
+| 🔔 | **System Tray** | KDE tray icon with sensor tooltip, close-to-tray |
+| 🖥️ | **GTK4 GUI** | Modern libadwaita interface with separate AC/Battery profiles |
+| ⌨️ | **CLI** | Full command-line control for scripting & automation |
+| 🔄 | **Daemon** | Auto-loads your saved settings on startup |
+
+---
 
 ## 📋 Supported Devices
 
+> **Works with 50+ Razer Blade laptops** — from 2015 Stealth to 2025 Blade 16.
+
+<details>
+<summary><b>Click to expand full device list</b></summary>
+
 | Model | Year | USB PID | Status |
 |-------|------|---------|--------|
-| Blade Stealth | 2015-2020 | Various | ✅ Supported |
-| Blade 15 | 2016-2023 | Various | ✅ Supported |
-| Blade Pro | 2017-2021 | Various | ✅ Supported |
-| Blade 14 | 2021-2025 | Various | ✅ Supported |
-| Blade 16 | 2023-2025 | Various | ✅ Supported |
+| Blade Stealth | 2015–2020 | Various | ✅ Supported |
+| Blade 15 | 2016–2023 | Various | ✅ Supported |
+| Blade Pro | 2017–2021 | Various | ✅ Supported |
+| Blade 14 | 2021–2025 | Various | ✅ Supported |
+| Blade 16 | 2023–2025 | Various | ✅ Supported |
 | Blade 17 | 2022 | 028B | ✅ Supported |
-| Blade 18 | 2023-2025 | Various | ✅ Supported |
+| Blade 18 | 2023–2025 | Various | ✅ Supported |
 | Razer Book 13 | 2020 | 026A | ✅ Supported |
 | **Blade 16 2025** | 2025 | **02C6** | ✅ **Tested** |
+
+</details>
 
 **Check if your laptop is supported:**
 ```bash
@@ -99,9 +192,9 @@ lsusb | grep -i razer
 # The XXXX after 1532: is your device's USB PID
 ```
 
-## 📦 Installation
+---
 
-### Dependencies
+## 🛠️ Build Dependencies
 
 <details>
 <summary><b>Fedora / RHEL / CentOS</b></summary>
@@ -129,42 +222,9 @@ sudo pacman -S rust cargo dbus libusb hidapi pkgconf systemd gtk4 libadwaita git
 ```
 </details>
 
-<details>
-<summary><b>NixOS</b></summary>
+---
 
-Add to your flake inputs:
-```nix
-inputs.razerdaemon = {
-  url = "github:encomjp/razer-control-revived";
-  inputs.nixpkgs.follows = "nixpkgs";
-};
-```
-
-Import the module:
-```nix
-imports = [ inputs.razerdaemon.nixosModules.default ];
-```
-
-Enable the service:
-```nix
-services.razer-laptop-control.enable = true;
-```
-</details>
-
-### Build & Install
-
-```bash
-# Clone the repository
-git clone https://github.com/encomjp/razercontrol-revived.git
-cd razercontrol-revived/razer_control_gui
-
-# Build and install (will prompt for sudo)
-./install.sh install
-```
-
-After installation, **log out and back in** (or reboot) for udev rules to take effect.
-
-## �️ KDE Plasma Widget
+## 🧩 KDE Plasma Widget
 
 A native KDE Plasma 6 widget is available for quick access from your panel.
 
@@ -185,7 +245,9 @@ The widget shows:
 
 See [kde-widget/README.md](razer_control_gui/kde-widget/README.md) for more details.
 
-## �🚀 Usage
+---
+
+## 🚀 Usage
 
 ### GUI Application
 
@@ -196,7 +258,8 @@ razer-settings
 
 The GUI provides separate tabs for AC and Battery power profiles, allowing different settings for each.
 
-### Command Line Interface
+<details>
+<summary><h3>⌨️ Command Line Interface</h3></summary>
 
 ```bash
 # Get help
@@ -229,8 +292,10 @@ razer-cli write logo ac 1
 razer-cli write bho on 80       # Limit to 80%
 razer-cli write bho off         # Disable limit
 ```
+</details>
 
-### RGB Effects
+<details>
+<summary><h3>🌈 RGB Effects</h3></summary>
 
 ```bash
 # Static color
@@ -251,8 +316,10 @@ razer-cli standard-effect reactive 2 255 255 0
 # Turn off
 razer-cli standard-effect off
 ```
+</details>
 
-### Service Management
+<details>
+<summary><h3>🔄 Service Management</h3></summary>
 
 The daemon runs as a **systemd user service** (no root required):
 
@@ -270,6 +337,9 @@ journalctl --user -u razercontrol -f
 systemctl --user enable razercontrol
 systemctl --user disable razercontrol
 ```
+</details>
+
+---
 
 ## 🔧 Troubleshooting
 
@@ -342,12 +412,16 @@ sudo systemctl disable razer-service
    ```
 </details>
 
+---
+
 ## 🗑️ Uninstallation
 
 ```bash
 cd razercontrol-revived/razer_control_gui
 ./install.sh uninstall
 ```
+
+---
 
 ## ➕ Adding Support for New Devices
 
@@ -383,21 +457,48 @@ If your Razer laptop isn't supported, you can add it:
 
 5. **Submit a PR!** Help others with the same laptop.
 
+---
+
 ## ⚠️ Warning
 
 This software is provided AS-IS with **NO WARRANTY**.
 
-- ❌ Not affiliated with Razer Inc.
-- ❌ Not responsible for any damage to your hardware
-- ❌ No official support - community project only
-- ✅ Works on my machine™ (Blade 16 2025 with RTX 5070 Ti)
+| | |
+|---|---|
+| ❌ | Not affiliated with Razer Inc. |
+| ❌ | Not responsible for any damage to your hardware |
+| ❌ | No official support — community project only |
+| ✅ | Works on my machine™ (Blade 16 2025 / RTX 5070 Ti) |
+
+---
 
 ## 🙏 Credits
 
-- Original project: [Razer-Linux/razer-laptop-control-no-dkms](https://github.com/Razer-Linux/razer-laptop-control-no-dkms)
-- HID modifications, GTK4 implementation & package porting: [@encomjp](https://github.com/encomjp)
-- UI rework (native libadwaita widgets, CSS cleanup): [Claude](https://claude.ai/) by Anthropic
+**Core**
+- **Original project:** [Razer-Linux/razer-laptop-control-no-dkms](https://github.com/Razer-Linux/razer-laptop-control-no-dkms)
+- **HID modifications, GTK4 implementation & packaging:** [@encomjp](https://github.com/encomjp)
+- **UI rework (native libadwaita widgets, CSS cleanup):** [Claude](https://claude.ai/) by Anthropic
+
+**Contributors**
+| Who | What |
+|-----|------|
+| [@johva1312](https://github.com/johva1312) | HID device init fallbacks — prefer `iface-0`, use `hidraw` as fallback for broader device compatibility |
+| [@sini](https://github.com/sini) | NixOS flake fixes — updated nixpkgs, fixed typos, ensured version parity |
+
+---
+
+<div align="center">
 
 ## 📄 License
 
-GPL-2.0 - See [LICENSE](LICENSE) file
+This project is licensed under the **GPL-2.0** license — see the [LICENSE](LICENSE) file for details.
+
+<br>
+
+<a href="https://www.paypal.com/donate/?hosted_button_id=H4SCC24R8KS4A"><img src="https://img.shields.io/badge/%E2%98%95_Support_Development-PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" alt="Donate" height="36" /></a>
+
+<br><br>
+
+**⭐ If this project helps you, give it a star!**
+
+</div>
